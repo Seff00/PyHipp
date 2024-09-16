@@ -13,6 +13,8 @@
 #SBATCH -e fsall-slurm.%N.%j.err # STDERR
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
+python -u -c "import PyHipp as pyh; \
+
 import time; \
 
 import DataProcessingTools as DPT; \
